@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuro Niche - All Brains Belong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">Neuro Niche</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close" onclick="toggleMobileNav()" aria-label="Close menu">&times;</button>
+        <a href="#about" onclick="toggleMobileNav()">About</a>
+        <a href="#services" onclick="toggleMobileNav()">Services</a>
+        <a href="#contact" onclick="toggleMobileNav()">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Neuro<br>Niche</h1>
+            <p class="hero-tagline">All Brains Belong</p>
+            <div class="hero-image">
+                <img src="images/headshot.jpg" alt="Founder of Neuro Niche">
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    <img src="images/casual.jpg" alt="Founder of Neuro Niche">
+                </div>
+                <div class="about-text-content">
+                    <h2 class="section-title" style="margin-bottom: 24px;">About Us</h2>
+                    <p class="about-quote">
+                        At <strong>Neuro Niche</strong>, we value neurodiversity as an essential aspect of humanity that needs to be intentionally designed and supported.
+                    </p>
+                    <p class="about-text">
+                        Founded by a late-diagnosed neurodivergent Occupational Therapist and mother of two, with global experience supporting individuals and communities across the lifespan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <div class="values-grid fade-in">
+                <div class="value-card">
+                    <svg class="value-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <p>When authentically supported — <strong>meaningful outcomes</strong> for all</p>
+                </div>
+                <div class="value-card">
+                    <svg class="value-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
+                    </svg>
+                    <p>When not embraced — <strong>harmful impacts</strong> for individuals & society</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Do</h2>
+            </div>
+            <p class="services-intro">
+                Customised support through training, consultation and coaching. Services offered virtually unless by special arrangement.
+            </p>
+
+            <div class="approach-cards fade-in">
+                <div class="approach-card">
+                    <h3>How We Do It</h3>
+                    <p>Neurodiversity-affirming, trauma-informed, and culturally-responsive practice</p>
+                </div>
+                <div class="approach-card">
+                    <h3>Who We Support</h3>
+                    <p>Individuals, families, and organisations building inclusive environments</p>
+                </div>
+                <div class="approach-card">
+                    <h3>Why It Matters</h3>
+                    <p>Creating space for authentic innovation and belonging</p>
+                </div>
+            </div>
+
+            <div class="support-types fade-in">
+                <div class="support-card">
+                    <h4>Organisational Support</h4>
+                    <ul>
+                        <li>Strengths & needs assessment</li>
+                        <li>Tailored workshops & facilitation</li>
+                        <li>Environmental recommendations</li>
+                    </ul>
+                    <p class="note">For schools, universities, workplaces & organisations</p>
+                </div>
+
+                <div class="support-card">
+                    <h4>Individual Support</h4>
+                    <ul>
+                        <li>Support for individuals & families</li>
+                        <li>Consultation & coaching</li>
+                        <li>Education services</li>
+                    </ul>
+                    <p class="note">No formal diagnosis required</p>
+                </div>
+
+                <div class="support-card">
+                    <h4>Support Groups</h4>
+                    <ul>
+                        <li>Adolescents & young adults</li>
+                        <li>Adults</li>
+                        <li>Caregivers & parents</li>
+                    </ul>
+                    <p class="note">Rotating topics including PDA, executive function & more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content fade-in">
+                <div class="contact-info">
+                    <h3>Let's Chat</h3>
+                    <p>Reach out to learn more about how we can support you or your organisation.</p>
+                    <form class="contact-form" id="contactForm">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject" value="New contact from Neuro Niche website">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+                        <div class="form-group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">What can we help you with?</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about what you're looking for (optional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                    </form>
+                    <p class="contact-note">Sliding scale pricing available for equitable access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Neuro Niche</div>
+            <p class="disclaimer">
+                All services use a coaching model and do not constitute therapy. Insurance reimbursement is not currently available.
+            </p>
+            <p class="copyright">&copy; 2024 Neuro Niche. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
