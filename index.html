@@ -6,7 +6,7 @@
     <title>Neuro Niche - All Brains Belong</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,300;1,6..12,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,6 +16,7 @@
             <a href="#" class="nav-logo">Neuro Niche</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#approach">Our Approach</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,6 +32,7 @@
     <div class="mobile-nav" id="mobileNav">
         <button class="mobile-close" onclick="toggleMobileNav()" aria-label="Close menu">&times;</button>
         <a href="#about" onclick="toggleMobileNav()">About</a>
+        <a href="#approach" onclick="toggleMobileNav()">Our Approach</a>
         <a href="#services" onclick="toggleMobileNav()">Services</a>
         <a href="#contact" onclick="toggleMobileNav()">Contact</a>
     </div>
@@ -41,10 +43,11 @@
         <div class="floating-shape shape-2"></div>
         <div class="hero-content">
             <h1 class="hero-title">Neuro<br>Niche</h1>
-            <p class="hero-tagline">All Brains Belong</p>
-            <div class="hero-image">
-                <img src="images/headshot.jpg" alt="Founder of Neuro Niche">
+            <div class="hero-brain">
+                <img src="images/brain.png" alt="Colorful illustration of a brain">
             </div>
+            <p class="hero-slogan">All Brains Belong.</p>
+            <p class="hero-tagline">Considered. Valued. Welcome.</p>
             <div class="hero-cta">
                 <a href="#contact" class="btn">Get in Touch</a>
             </div>
@@ -56,14 +59,17 @@
         <div class="container">
             <div class="about-content fade-in">
                 <div class="about-image">
-                    <img src="images/casual.jpg" alt="Founder of Neuro Niche">
+                    <img src="images/headshot.jpg" alt="Founder of Neuro Niche">
                 </div>
                 <div class="about-text-content">
-                    <h2 class="section-title" style="margin-bottom: 24px;">About Us</h2>
-                    <p class="about-quote">
-                        At <strong>Neuro Niche</strong>, we value neurodiversity as an essential aspect of humanity that needs to be intentionally designed and supported.
+                    <h2 class="section-title">About Us</h2>
+                    <p class="about-intro">
+                        At <strong>Neuro Niche</strong>, we value neurodiversity as an essential aspect of humanity.
                     </p>
                     <p class="about-text">
+                        We are committed to intentionally designing environments, systems and supports that accommodate, affirm, and embrace this.
+                    </p>
+                    <p class="about-bio">
                         Founded by a late-diagnosed neurodivergent Occupational Therapist and mother of two, with global experience supporting individuals and communities across the lifespan.
                     </p>
                 </div>
@@ -71,21 +77,37 @@
         </div>
     </section>
 
-    <!-- Values Section -->
-    <section class="values">
+    <!-- Approach Section (How / Who / Why merged) -->
+    <section class="approach" id="approach">
         <div class="container">
-            <div class="values-grid fade-in">
-                <div class="value-card">
-                    <svg class="value-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                    <p>When authentically supported — <strong>meaningful outcomes</strong> for all</p>
+            <div class="section-header">
+                <h2 class="section-title">Our Approach</h2>
+            </div>
+
+            <div class="approach-grid fade-in">
+                <div class="approach-block">
+                    <h3>How We Do It</h3>
+                    <p>Centring individual interests, strengths, and lived experience.</p>
+                    <p>Neurodiversity-affirming, trauma-informed, and culturally-responsive practice, with an emphasis on relational safety and meaningful environmental accommodations.</p>
                 </div>
-                <div class="value-card">
-                    <svg class="value-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
-                    </svg>
-                    <p>When not embraced — <strong>harmful impacts</strong> for individuals & society</p>
+                <div class="approach-block">
+                    <h3>Who We Serve</h3>
+                    <p>Individuals, families, and organisations seeking to build environments rooted in inclusion and belonging.</p>
+                    <p class="welcome-note">Everyone is welcome here.</p>
+                </div>
+            </div>
+
+            <div class="why-section fade-in">
+                <h3 class="why-title">Why It Matters</h3>
+                <div class="why-grid">
+                    <div class="why-card why-negative">
+                        <h4>When neurodiversity is not embraced</h4>
+                        <p>Harmful impacts for individuals and society. People are left unsupported, misunderstood, and excluded from the environments they navigate every day.</p>
+                    </div>
+                    <div class="why-card why-positive">
+                        <h4>When neurodiversity is embraced</h4>
+                        <p>When we create truly neuro-inclusive spaces and engagement opportunities, we create space for authentic innovation, and ultimately belonging for individuals and societies.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,25 +117,11 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">What We Do</h2>
-            </div>
-            <p class="services-intro">
-                Customised support through training, consultation and coaching. Services offered virtually unless by special arrangement.
-            </p>
-
-            <div class="approach-cards fade-in">
-                <div class="approach-card">
-                    <h3>How We Do It</h3>
-                    <p>Neurodiversity-affirming, trauma-informed, and culturally-responsive practice</p>
-                </div>
-                <div class="approach-card">
-                    <h3>Who We Support</h3>
-                    <p>Individuals, families, and organisations building inclusive environments</p>
-                </div>
-                <div class="approach-card">
-                    <h3>Why It Matters</h3>
-                    <p>Creating space for authentic innovation and belonging</p>
-                </div>
+                <h2 class="section-title">Services</h2>
+                <p class="services-intro">
+                    Customised support through training, consultation and coaching.<br>
+                    Services offered virtually unless by special arrangement.
+                </p>
             </div>
 
             <div class="support-types fade-in">
@@ -122,29 +130,43 @@
                     <ul>
                         <li>Strengths & needs assessment</li>
                         <li>Tailored workshops & facilitation</li>
-                        <li>Environmental recommendations</li>
+                        <li>Environmental recommendations & personnel capacity-building</li>
                     </ul>
                     <p class="note">For schools, universities, workplaces & organisations</p>
+                    <p class="note">Options include both once-off & ongoing support</p>
                 </div>
 
                 <div class="support-card">
                     <h4>Individual Support</h4>
                     <ul>
-                        <li>Support for individuals & families</li>
-                        <li>Consultation & coaching</li>
-                        <li>Education services</li>
+                        <li>Support for individuals, families, & caregivers</li>
+                        <li>Consultation, education & coaching services</li>
                     </ul>
-                    <p class="note">No formal diagnosis required</p>
+                    <p class="note">A formal diagnosis is not required. Self-identification, suspected neurodivergence, curiosity or uncertainty are all valid and respected.</p>
                 </div>
 
                 <div class="support-card">
                     <h4>Support Groups</h4>
-                    <ul>
-                        <li>Adolescents & young adults</li>
-                        <li>Adults</li>
-                        <li>Caregivers & parents</li>
-                    </ul>
-                    <p class="note">Rotating topics including PDA, executive function & more</p>
+                    <div class="support-card-inner">
+                        <div>
+                            <p class="support-label">For:</p>
+                            <ul>
+                                <li>Adolescents & young adults</li>
+                                <li>Adults</li>
+                                <li>Caregivers & parents</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="support-label">Rotating topics:</p>
+                            <ul>
+                                <li>Special interests</li>
+                                <li>Navigating PDA</li>
+                                <li>Neurodivergence in adult women</li>
+                                <li>Executive function "brain hacking"</li>
+                                <li>And more</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,7 +197,6 @@
                         </div>
                         <button type="submit" class="btn btn-submit">Send Message</button>
                     </form>
-                    <p class="contact-note">Sliding scale pricing available for equitable access</p>
                 </div>
             </div>
         </div>
@@ -184,11 +205,31 @@
     <!-- Footer -->
     <footer>
         <div class="container">
+            <div class="footer-symbol">
+                <!-- Neurodiversity infinity rainbow symbol -->
+                <svg class="infinity-symbol" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#e74c3c"/>
+                            <stop offset="16%" style="stop-color:#e67e22"/>
+                            <stop offset="33%" style="stop-color:#f1c40f"/>
+                            <stop offset="50%" style="stop-color:#2ecc71"/>
+                            <stop offset="66%" style="stop-color:#3498db"/>
+                            <stop offset="83%" style="stop-color:#9b59b6"/>
+                            <stop offset="100%" style="stop-color:#e74c3c"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M 50 50 C 50 20, 10 20, 10 50 C 10 80, 50 80, 50 50 C 50 20, 90 20, 90 50 C 90 80, 50 80, 50 50" transform="translate(50, 0) scale(1.1)" fill="none" stroke="url(#rainbow)" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
             <div class="footer-logo">Neuro Niche</div>
-            <p class="disclaimer">
-                All services use a coaching model and do not constitute therapy. Insurance reimbursement is not currently available.
+            <p class="accessibility-note">
+                Kindly note, sliding-scale options are available to support equitable access for individuals and organisations where affordability may be a barrier.
             </p>
-            <p class="copyright">&copy; 2024 Neuro Niche. All rights reserved.</p>
+            <p class="disclaimer">
+                All services provided use a coaching model and do not constitute therapy. Insurance reimbursement is not currently available.
+            </p>
+            <p class="copyright">&copy; 2025 Neuro Niche. All rights reserved.</p>
         </div>
     </footer>
 
