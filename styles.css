@@ -161,21 +161,21 @@ body {
 .hero-content {
     position: relative;
     z-index: 1;
-    padding: 100px 32px 60px;
+    padding: 80px 32px 40px;
 }
 
 .hero-title {
     font-family: 'DM Serif Display', serif;
-    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-size: clamp(3rem, 7vw, 4.5rem);
     font-weight: 400;
     line-height: 0.9;
     color: var(--text-dark);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     animation: fadeInUp 1s ease-out;
 }
 
 .hero-brain {
-    margin: 20px auto;
+    margin: 16px auto;
     animation: fadeInUp 1s ease-out 0.2s both;
 }
 
